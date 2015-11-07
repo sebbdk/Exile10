@@ -45,10 +45,9 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		foreach(GameObject obj in animators) {
-			obj.GetComponent<Animator>().SetBool("dance", true);
+			obj.GetComponent<Animator>().SetBool("dance", dance);
 
 			if(dir.y != 0 || dir.x != 0) {
-				Debug.Log ("Moving!!");
 				obj.GetComponent<Animator>().SetBool("moving", true);
 			} else {
 				obj.GetComponent<Animator>().SetBool("moving", false);
