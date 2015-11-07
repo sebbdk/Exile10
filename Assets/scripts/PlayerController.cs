@@ -23,16 +23,16 @@ public class PlayerController : MonoBehaviour {
 
 	void handleWalking() {
 		Vector2 dir = new Vector2 ();
-		if (Input.GetKey ("w")) {
+		if (Input.GetKey (KeyCode.UpArrow)) {
 			dir.y += 1;
 		}
-		if (Input.GetKey ("s")) {
+		if (Input.GetKey (KeyCode.DownArrow)) {
 			dir.y -= 1;
 		}
-		if (Input.GetKey ("a")) {
+		if (Input.GetKey (KeyCode.LeftArrow)) {
 			dir.x -= 1;
 		}
-		if (Input.GetKey ("d")) {
+		if (Input.GetKey (KeyCode.RightArrow)) {
 			dir.x += 1;
 		}
 
